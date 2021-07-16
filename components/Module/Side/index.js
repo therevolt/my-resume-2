@@ -9,6 +9,12 @@ const Side = (props) => {
     props.fireEvent[2](false);
   };
 
+  const handleDownload = () => {
+    window.location.replace(
+      "https://drive.google.com/file/d/1eZpFJI5921c6Ll4T28xQkb635dK66z-8/view?usp=sharing"
+    );
+  };
+
   return (
     <SideBox
       className={`text-center side py-5 d-flex flex-column position-relative ${props.className}`}
@@ -47,14 +53,29 @@ const Side = (props) => {
             handleClick={handleClick}
             text="CONTACT"
           />
+          <SpanMenu
+            id="contact"
+            handleClick={handleDownload}
+            text="DOWNLOAD CV"
+          />
         </div>
         <Hr side />
         <div className="icon my-2">
           <a href="https://wa.me/6289522407667" target="_blank">
-            <img className="mx-2" src="/images/whatsapp.png" alt="" width="16" />
+            <img
+              className="mx-2"
+              src="/images/whatsapp.png"
+              alt=""
+              width="16"
+            />
           </a>
           <a href="https://linkedin.com/in/ramaseftiansyah" target="_blank">
-            <img className="mx-2" src="/images/linkedin.png" alt="" width="16" />
+            <img
+              className="mx-2"
+              src="/images/linkedin.png"
+              alt=""
+              width="16"
+            />
           </a>
         </div>
       </div>

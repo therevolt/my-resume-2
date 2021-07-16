@@ -37,12 +37,24 @@ const skillLib = [
     icon: "/images/express.png",
   },
   {
+    name: "VueJS",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vue.png/220px-Vue.png",
+  },
+  {
     name: "Bootstrap",
     icon: "/images/bootstrap.png",
   },
   {
+    name: "Vuetify",
+    icon: "https://pbs.twimg.com/media/Ei5n6vBWoAEy5gp.png",
+  },
+  {
     name: "MySQL",
     icon: "/images/mysql.png",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png",
   },
   {
     name: "Sequelize",

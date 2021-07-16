@@ -7,6 +7,7 @@ import About from "../components/Module/About";
 import Projects from "../components/Module/Projects";
 import Side from "../components/Module/Side";
 import Skills from "../components/Module/Skills";
+import Head from "next/head";
 
 export default function Home() {
   const [active, setActive] = useState("about");
@@ -47,12 +48,22 @@ export default function Home() {
 
   return (
     <Container primary>
+      <Head>
+        <title>{active.toUpperCase()} - PORTOFOLIO RAMA SEFTIANSYAH</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="container px-5">
         <Box className="d-flex">
-          <Side fireEvent={[setActive, active, setShow]} className={show ? "block" : "none"} />
+          <Side
+            fireEvent={[setActive, active, setShow]}
+            className={show ? "block" : "none"}
+          />
           <div className="main ms-4">
             <div className="d-flex flex-row">
-              <div className="mt-3 me-3 d-sm-block d-md-none" onClick={handleClick}>
+              <div
+                className="mt-3 me-3 d-sm-block d-md-none"
+                onClick={handleClick}
+              >
                 <img src="/images/back.png" alt="" width="16" />
               </div>
               <div>
@@ -70,16 +81,24 @@ export default function Home() {
                     <img src="/images/contact.png" alt="" width="20" />
                     <span> Contact me</span>
                   </div>
-                  <div className="d-flex flex-row">
+                  <div className="d-flex flex-lg-row flex-column">
                     {dataContact.map((item) => {
                       return (
                         <Card className="card d-flex flex-row mx-2 my-2">
-                          <div className="position-relative" style={{ width: "50px" }}>
+                          <div
+                            className="position-relative"
+                            style={{ width: "50px" }}
+                          >
                             <div
                               class="position-absolute top-50 translate-middle"
                               style={{ left: "25px" }}
                             >
-                              <img className="mx-2" src={item.image} alt="" height="40" />
+                              <img
+                                className="mx-2"
+                                src={item.image}
+                                alt=""
+                                height="40"
+                              />
                             </div>
                           </div>
                           <div className="d-flex flex-column">
@@ -100,16 +119,24 @@ export default function Home() {
                     <img src="/images/contact.png" alt="" width="20" />
                     <span> Website Personal</span>
                   </div>
-                  <div className="d-flex flex-row">
+                  <div className="d-flex flex-lg-row flex-column">
                     {dataSite.map((item) => {
                       return (
                         <Card className="card d-flex flex-row mx-2 my-2">
-                          <div className="position-relative" style={{ width: "50px" }}>
+                          <div
+                            className="position-relative"
+                            style={{ width: "50px" }}
+                          >
                             <div
                               class="position-absolute top-50 translate-middle"
                               style={{ left: "25px" }}
                             >
-                              <img className="mx-2" src={item.image} alt="" height="40" />
+                              <img
+                                className="mx-2"
+                                src={item.image}
+                                alt=""
+                                height="40"
+                              />
                             </div>
                           </div>
                           <div className="d-flex flex-column">
