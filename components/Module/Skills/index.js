@@ -37,6 +37,10 @@ const skillLib = [
     icon: "/images/express.png",
   },
   {
+    name: "HapiJS",
+    icon: "https://miro.medium.com/max/1200/1*3xVhmgkXGjNfJmi3WUd_eQ.png",
+  },
+  {
     name: "VueJS",
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vue.png/220px-Vue.png",
   },
@@ -154,14 +158,17 @@ const Skills = () => {
     <>
       <div className="icon my-3">
         <img src="/images/programming.png" alt="" />
-        <span> Programming/Markup Languages</span>
+        <span> [{skillLang.length}] Programming/Markup Languages</span>
       </div>
       <div className="d-flex flex-wrap">
         {skillLang.map((item) => {
           return (
             <Card className="card d-flex flex-row mx-2 my-2">
               <div className="position-relative" style={{ width: "50px" }}>
-                <div class="position-absolute top-50 translate-middle" style={{ left: "25px" }}>
+                <div
+                  class="position-absolute top-50 translate-middle"
+                  style={{ left: "25px" }}
+                >
                   <img className="mx-2" src={item.icon} alt="" height="40" />
                 </div>
               </div>
@@ -172,14 +179,17 @@ const Skills = () => {
       </div>
       <div className="icon my-3">
         <img src="/images/programming.png" alt="" />
-        <span> Libraries/Frameworks</span>
+        <span> [{skillLib.length}] Libraries/Frameworks</span>
       </div>
       <div className="d-flex flex-wrap">
         {skillLib.map((item) => {
           return (
             <Card className="card d-flex flex-row mx-2 my-2">
               <div className="position-relative" style={{ width: "50px" }}>
-                <div class="position-absolute top-50 translate-middle" style={{ left: "25px" }}>
+                <div
+                  class="position-absolute top-50 translate-middle"
+                  style={{ left: "25px" }}
+                >
                   <img className="mx-2" src={item.icon} alt="" height="40" />
                 </div>
               </div>
@@ -190,14 +200,17 @@ const Skills = () => {
       </div>
       <div className="icon my-3">
         <img src="/images/programming.png" alt="" />
-        <span> Others</span>
+        <span> [{skillOther.length}] Others</span>
       </div>
       <div className="d-flex flex-wrap mb-3">
         {skillOther.map((item) => {
           return (
             <Card className="card d-flex flex-row mx-2 my-2">
               <div className="position-relative" style={{ width: "50px" }}>
-                <div class="position-absolute top-50 translate-middle" style={{ left: "25px" }}>
+                <div
+                  class="position-absolute top-50 translate-middle"
+                  style={{ left: "25px" }}
+                >
                   <img className="mx-2" src={item.icon} alt="" height="40" />
                 </div>
               </div>

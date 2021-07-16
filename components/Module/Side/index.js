@@ -19,7 +19,7 @@ const Side = (props) => {
     <SideBox
       className={`text-center side py-5 d-flex flex-column position-relative ${props.className}`}
     >
-      <div>
+      <div style={{ marginTop: "-35px" }}>
         <img src="/images/me2.png" alt="" width="140" />
         <h5 className="pt-3" style={{ margin: 0 }}>
           Rama Seftiansyah
@@ -54,7 +54,7 @@ const Side = (props) => {
             text="CONTACT"
           />
           <SpanMenu
-            id="contact"
+            id="dwnld-cv"
             handleClick={handleDownload}
             text="DOWNLOAD CV"
           />
