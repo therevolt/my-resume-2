@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import SideBox from "../../Base/Box/side";
 import Hr from "../../Base/Hr";
 import SpanMenu from "../../Base/SpanMenu";
 
 const Side = (props) => {
+  const [mobile, setMobile] = useState(false);
   const handleClick = (e) => {
     const { id } = e.target;
     props.fireEvent[0](id);
@@ -15,11 +17,15 @@ const Side = (props) => {
     );
   };
 
+  useEffect(() => {
+    setMobile(window.screen.width < 800);
+  });
+
   return (
     <SideBox
       className={`text-center side py-5 d-flex flex-column position-relative ${props.className}`}
     >
-      <div style={{ marginTop: "-35px" }}>
+      <div style={mobile ? {} : { marginTop: "-35px" }}>
         <img src="/images/me2.png" alt="" width="140" />
         <h5 className="pt-3" style={{ margin: 0 }}>
           Rama Seftiansyah

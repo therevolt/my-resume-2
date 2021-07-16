@@ -1,6 +1,13 @@
 import Card from "../../Base/Card";
 const dataProject = [
   {
+    title: "OSS - BKPM",
+    img: "/images/oss-logo.png",
+    desc: "Online Single Submission (OSS)",
+    github: "#",
+    visit: "https://oss.go.id/",
+  },
+  {
     title: "Tickitz",
     img: "/images/tickitz.png",
     desc: "Online cinema ticket booking website",
