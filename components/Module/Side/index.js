@@ -30,7 +30,7 @@ const Side = (props) => {
         <h5 className="pt-3" style={{ margin: 0 }}>
           Rama Seftiansyah
         </h5>
-        <span>Full Stack Web Developer</span>
+        <span>Full-Stack Web Developer</span>
       </div>
       <div className="position-absolute bottom-0" style={{ width: "100%" }}>
         <Hr side />
